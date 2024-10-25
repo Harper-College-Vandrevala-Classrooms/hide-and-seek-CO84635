@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class TestFuzzyFinder {
+class TestFuzzyFinder {
 
   FuzzyFinder finder;
   FuzzyListGenerator generator;
@@ -18,7 +18,7 @@ public class TestFuzzyFinder {
     finder = new FuzzyFinder();
     generator = new FuzzyListGenerator();
   }
-  
+
     @Test
     void testLinearSearchWithSortedFuzzies() {
         ArrayList<Fuzzy> sortedFuzzies = generator.sortedRainbowFuzzies();
